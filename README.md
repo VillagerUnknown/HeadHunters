@@ -13,6 +13,7 @@ The Head Hunter Villager buys and sells Mob Heads.
 
 **Options**
 
+* lootingBonusPerLevel - Bonus chance per level of looting (Default: 0.1)
 * commonDropChance - Drop chance for common mobs (Default: 0.33)
 * uncommonDropChance - Drop chance for uncommon mobs (Default: 0.2)
 * rareDropChance - Drop chance for rare mobs (Default: 0.1)
