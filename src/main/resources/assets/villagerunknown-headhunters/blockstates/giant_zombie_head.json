@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "villagerunknown-headhunters:block/giant_zombie_head",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "villagerunknown-headhunters:block/giant_zombie_head"
+    },
+    "facing=south": {
+      "model": "villagerunknown-headhunters:block/giant_zombie_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "villagerunknown-headhunters:block/giant_zombie_head",
+      "y": 270
+    }
+  }
+}

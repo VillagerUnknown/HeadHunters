@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "villagerunknown-headhunters:block/giant_zombie_head_bottom",
+    "east": "villagerunknown-headhunters:block/giant_zombie_head_left",
+    "north": "villagerunknown-headhunters:block/giant_zombie_head_face",
+    "south": "villagerunknown-headhunters:block/giant_zombie_head_back",
+    "up": "villagerunknown-headhunters:block/giant_zombie_head_top",
+    "west": "villagerunknown-headhunters:block/giant_zombie_head_right",
+    "particle": "villagerunknown-headhunters:block/giant_zombie_head_top"
+  }
+}

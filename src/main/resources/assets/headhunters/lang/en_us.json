@@ -1,0 +1,20 @@
+{
+
+  "text.autoconfig.villagerunknown-headhunters.title": "VillagerUnknown's Head Hunters",
+
+  "text.autoconfig.villagerunknown-headhunters.category.General": "General",
+  "text.autoconfig.villagerunknown-headhunters.category.DropChances": "Drop Chances",
+
+  "text.autoconfig.villagerunknown-headhunters.option.lootingBonusPerLevel": "Looting Bonus Per Level",
+  "text.autoconfig.villagerunknown-headhunters.option.commonDropChance": "Common Drop Chance",
+  "text.autoconfig.villagerunknown-headhunters.option.uncommonDropChance": "Uncommon Drop Chance",
+  "text.autoconfig.villagerunknown-headhunters.option.rareDropChance": "Rare Drop Chance",
+  "text.autoconfig.villagerunknown-headhunters.option.epicDropChance": "Epic Drop Chance",
+  "text.autoconfig.villagerunknown-headhunters.option.legendaryDropChance": "Legendary Drop Chance",
+
+  "text.villagerunknown-headhunters.head": "Head",
+
+  "entity.minecraft.villager.headhunter": "Head Hunter",
+
+  "block.villagerunknown-headhunters.giant_zombie_head": "Giant Zombie Head"
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "villagerunknown-headhunters",
+  "version": "${version}",
+  "name": "VillagerUnknown's Head Hunters",
+  "description": "Adds mob and player head drop chance and Head Hunter villagers.",
+  "authors": ["VillagerUnknown"],
+  "contact": {
+    "homepage":"https://github.com/VillagerUnknown/HeadHunters"
+  },
+  "license": "CC-BY-4.0",
+  "icon": "assets/headhunters/villagerunknown-head-hunters.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.villagerunknown.headhunters.client.HeadhuntersClient"
+    ],
+    "main": [
+      "me.villagerunknown.headhunters.Headhunters"
+    ],
+    "modmenu": [
+      "me.villagerunknown.headhunters.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "headhunters.mixins.json",
+    {
+      "config": "headhunters.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "villagerunknown-platform": ">=1.1.1"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://github.com/VillagerUnknown/HeadHunters"
+      }
+    }
+  }
+}
