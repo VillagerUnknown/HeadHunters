@@ -1,6 +1,13 @@
 # VillagerUnknown's Head Hunters
 
-Adds Mob Head drops and Head Hunter Villagers to world generation.
+Adds Head drops and Head Hunter Villagers to world generation.
+
+**Features**
+
+* Configurable Mob and Player head drop chances.
+* Head Hunter villagers trading Mob heads.
+* Craftable Giant Zombie Head block as the Head Hunters workstation.
+* Custom structures including the Giant Zombie Head block.
 
 **Head Hunter Villagers**
 
@@ -9,8 +16,7 @@ The Head Hunter Villager buys and sells Mob Heads.
 
 **Structures**
 
-* **Hunting Cabins** - Hunting cabins can be found throughout the world housing Head Hunters villagers.
-* **Hunting Camps** - Hunting camps can be found throughout the world with Head Hunters looking for their next trophy.
+* **Hunting Lodges** - Hunting lodges can be found throughout the world housing Head Hunters villagers.
 
 **Custom Blocks**
 
