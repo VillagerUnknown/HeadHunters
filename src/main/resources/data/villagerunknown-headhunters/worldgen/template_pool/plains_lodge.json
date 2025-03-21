@@ -5,7 +5,7 @@
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "villagerunknown-headhunters:cabins/plains_cobblestone_cabin-1",
+        "location": "villagerunknown-headhunters:cabins/plains_cobblestone_lodge-1",
         "projection": "rigid",
         "processors": "minecraft:mossify_20_percent"
       }
