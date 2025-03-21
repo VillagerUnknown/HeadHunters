@@ -7,9 +7,15 @@ Adds Mob Head drops and Head Hunter Villagers to world generation.
 Head Hunter Villagers use Giant Zombie Heads as workstations. 
 The Head Hunter Villager buys and sells Mob Heads. 
 
+**Structures**
+
+* **Hunting Cabins** - Hunting cabins can be found throughout the world housing Head Hunters villagers.
+* **Hunting Camps** - Hunting camps can be found throughout the world with Head Hunters looking for their next trophy.
+
 **Custom Blocks**
 
-* **Giant Zombie Head** - The head of the legendary Giant Zombie acts as the Head Hunter Villagers workstation.
+* **Giant Zombie Head** - The head of the legendary Giant Zombie, the Head Hunter Villagers workstation, can now be placed in the world. 
+It can be found in structures and crafted by combining 4 zombie heads in a crafting table.
 
 **Options**
 

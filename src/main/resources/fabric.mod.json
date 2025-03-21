@@ -3,7 +3,7 @@
   "id": "villagerunknown-headhunters",
   "version": "${version}",
   "name": "VillagerUnknown's Head Hunters",
-  "description": "Adds mob and player head drop chance and Head Hunter villagers.",
+  "description": "Adds mob and player head drops, Head Hunter villagers, and custom structures.",
   "authors": ["VillagerUnknown"],
   "contact": {
     "homepage":"https://github.com/VillagerUnknown/HeadHunters"
