@@ -1,7 +1,27 @@
 {
   "structures": [
     {
+      "structure": "villagerunknown-headhunters:birch_lodge",
+      "weight": 1
+    },
+    {
+      "structure": "villagerunknown-headhunters:dark_oak_lodge",
+      "weight": 1
+    },
+    {
+      "structure": "villagerunknown-headhunters:jungle_lodge",
+      "weight": 1
+    },
+    {
       "structure": "villagerunknown-headhunters:plains_lodge",
+      "weight": 1
+    },
+    {
+      "structure": "villagerunknown-headhunters:savanna_lodge",
+      "weight": 1
+    },
+    {
+      "structure": "villagerunknown-headhunters:taiga_lodge",
       "weight": 1
     }
   ],

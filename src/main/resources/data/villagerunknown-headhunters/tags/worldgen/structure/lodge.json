@@ -1,5 +1,10 @@
 {
   "values": [
-    "villagerunknown-headhunters:plains_lodge"
+    "villagerunknown-headhunters:birch_lodge",
+    "villagerunknown-headhunters:dark_oak_lodge",
+    "villagerunknown-headhunters:jungle_lodge",
+    "villagerunknown-headhunters:plains_lodge",
+    "villagerunknown-headhunters:savanna_lodge",
+    "villagerunknown-headhunters:taiga_lodge"
   ]
 }

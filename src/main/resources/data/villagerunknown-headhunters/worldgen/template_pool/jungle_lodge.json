@@ -7,7 +7,7 @@
         "element_type": "minecraft:single_pool_element",
         "location": "villagerunknown-headhunters:lodges/plains_cobblestone_lodge-1",
         "projection": "rigid",
-        "processors": "minecraft:mossify_20_percent"
+        "processors": "villagerunknown-headhunters:jungle"
       }
     },
     {
@@ -16,7 +16,7 @@
         "element_type": "minecraft:single_pool_element",
         "location": "villagerunknown-headhunters:lodges/plains_cobblestone_lodge-1",
         "projection": "rigid",
-        "processors": "villagerunknown-headhunters:mossy_cobblestone"
+        "processors": "villagerunknown-headhunters:jungle"
       }
     },
     {
@@ -25,7 +25,7 @@
         "element_type": "minecraft:single_pool_element",
         "location": "villagerunknown-headhunters:lodges/plains_cobblestone_lodge-2",
         "projection": "rigid",
-        "processors": "minecraft:mossify_20_percent"
+        "processors": "villagerunknown-headhunters:jungle"
       }
     },
     {
@@ -34,7 +34,7 @@
         "element_type": "minecraft:single_pool_element",
         "location": "villagerunknown-headhunters:lodges/plains_cobblestone_lodge-2",
         "projection": "rigid",
-        "processors": "villagerunknown-headhunters:mossy_cobblestone"
+        "processors": "villagerunknown-headhunters:jungle"
       }
     }
   ]
