@@ -78,7 +78,7 @@ public class headhunterVillagerFeature {
 	private static void registerVillagerProfession() {
 		Predicate<RegistryEntry<PointOfInterestType>> predicate = (entry) -> entry.matchesKey( HEADHUNTER_POI_TYPE_REGISTRY_KEY );
 		
-		HEADHUNTER_PROFESSION = new VillagerProfession( HEADHUNTER_STRING, predicate, predicate, ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ITEM_FLINTANDSTEEL_USE );
+		HEADHUNTER_PROFESSION = new VillagerProfession( HEADHUNTER_STRING, predicate, predicate, ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_ZOMBIE_AMBIENT );
 		
 		Registry.register( Registries.VILLAGER_PROFESSION, HEADHUNTER_IDENTIFIER, HEADHUNTER_PROFESSION );
 		
