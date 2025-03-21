@@ -1,7 +1,9 @@
 package me.villagerunknown.headhunters.feature;
 
 import com.mojang.authlib.GameProfile;
+import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.properties.Property;
+import com.mojang.authlib.yggdrasil.ProfileResult;
 import me.villagerunknown.headhunters.Headhunters;
 import me.villagerunknown.headhunters.drop.HeadDrop;
 import me.villagerunknown.platform.util.MathUtil;
@@ -33,6 +35,7 @@ import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -355,7 +358,13 @@ public class headDropFeature {
 	
 	private static void registerHeadDrop() {
 		ServerLivingEntityEvents.ALLOW_DEATH.register((entity, damageSource, amount) -> {
-			if( MOB_DROPS.containsKey( entity.getType().getUntranslatedName() ) ) {
+			if( entity.isPlayer() ) {
+				if( null != damageSource.getAttacker() ) {
+					if (damageSource.getAttacker().isPlayer()) {
+						entity.dropStack( getPlayerHeadStack((PlayerEntity) entity) );
+					} // if
+				} // if
+			} else if( MOB_DROPS.containsKey( entity.getType().getUntranslatedName() ) ) {
 				HeadDrop drop = MOB_DROPS.get( entity.getType().getUntranslatedName() );
 				
 				if( null != drop && null != damageSource.getAttacker() ) {
@@ -399,6 +408,26 @@ public class headDropFeature {
 			
 			return true;
 		});
+	}
+	
+	public static ItemStack getPlayerHeadStack( PlayerEntity player ) {
+		ItemStack headStack = new ItemStack( Blocks.PLAYER_HEAD, 1 );
+		headStack.set(DataComponentTypes.MAX_STACK_SIZE, 64);
+		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, SoundEvents.ENTITY_PLAYER_BURP.getId());
+		
+		MinecraftServer server = player.getServer();
+		if( null != server ) {
+			MinecraftSessionService sessionService = server.getSessionService();
+			ProfileResult profile = sessionService.fetchProfile(player.getUuid(), false);
+			
+			if( null != profile ) {
+				ProfileComponent profileComponent = new ProfileComponent(profile.profile());
+				
+				headStack.set(DataComponentTypes.PROFILE, profileComponent );
+			} // if
+		} // if
+		
+		return headStack;
 	}
 	
 	public static ItemStack buildHeadStack(Entity entity, UUID attackerUuid, @NotNull String texture, SoundEvent sound, float dropChance ) {
@@ -445,6 +474,7 @@ public class headDropFeature {
 		
 		ItemStack headStack = new ItemStack(Items.PLAYER_HEAD, 1);
 		headStack.set(DataComponentTypes.MAX_STACK_SIZE, 64);
+		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, sound.getId());
 		
 		Rarity rarity = Rarity.COMMON;
 		
@@ -473,7 +503,6 @@ public class headDropFeature {
 			headStack.set(DataComponentTypes.PROFILE, profile);
 		} // if
 		
-		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, sound.getId());
 		headStack.set(DataComponentTypes.ITEM_NAME, Text.of( formatEntityName( entityName ) + " Head" ));
 		
 		return headStack;
