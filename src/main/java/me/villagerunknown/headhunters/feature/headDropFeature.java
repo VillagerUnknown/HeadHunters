@@ -358,7 +358,7 @@ public class headDropFeature {
 	
 	private static void registerHeadDrop() {
 		ServerLivingEntityEvents.ALLOW_DEATH.register((entity, damageSource, amount) -> {
-			if( entity.isPlayer() ) {
+			if( entity.isPlayer() && MathUtil.hasChance( Headhunters.CONFIG.playerHeadDropChance ) ) {
 				if( null != damageSource.getAttacker() ) {
 					if (damageSource.getAttacker().isPlayer()) {
 						entity.dropStack( getPlayerHeadStack((PlayerEntity) entity) );
@@ -411,14 +411,17 @@ public class headDropFeature {
 	}
 	
 	public static ItemStack getPlayerHeadStack( PlayerEntity player ) {
+		return getPlayerHeadStack( player.getServer(), player.getUuid() );
+	}
+	
+	public static ItemStack getPlayerHeadStack( MinecraftServer server, UUID uuid ) {
 		ItemStack headStack = new ItemStack( Blocks.PLAYER_HEAD, 1 );
 		headStack.set(DataComponentTypes.MAX_STACK_SIZE, 64);
-		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, SoundEvents.ENTITY_PLAYER_BURP.getId());
+//		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, SoundEvents.ENTITY_PLAYER_BURP.getId());
 		
-		MinecraftServer server = player.getServer();
 		if( null != server ) {
 			MinecraftSessionService sessionService = server.getSessionService();
-			ProfileResult profile = sessionService.fetchProfile(player.getUuid(), false);
+			ProfileResult profile = sessionService.fetchProfile(uuid, false);
 			
 			if( null != profile ) {
 				ProfileComponent profileComponent = new ProfileComponent(profile.profile());

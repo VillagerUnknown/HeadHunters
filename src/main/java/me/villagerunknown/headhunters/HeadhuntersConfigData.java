@@ -14,6 +14,9 @@ public class HeadhuntersConfigData implements me.shedaniel.autoconfig.ConfigData
 	public float lootingBonusPerLevel = 0.1F;
 	
 	@ConfigEntry.Category("DropChances")
+	public float playerHeadDropChance = 1F;
+	
+	@ConfigEntry.Category("DropChances")
 	public float commonDropChance = 0.33F;
 	
 	@ConfigEntry.Category("DropChances")
