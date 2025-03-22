@@ -1,6 +1,6 @@
 # VillagerUnknown's Head Hunters
 
-Adds Head drops and Head Hunter Villagers to world generation.
+Adds Mob and Player Head drops as well as Head Hunter Villagers to world generation.
 
 **Features**
 
