@@ -11,7 +11,6 @@ import me.villagerunknown.platform.util.StringUtil;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.component.ComponentMap;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.component.type.ProfileComponent;
@@ -24,7 +23,6 @@ import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.CreeperEntity;
-import net.minecraft.entity.mob.PiglinEntity;
 import net.minecraft.entity.mob.VexEntity;
 import net.minecraft.entity.mob.ZombieVillagerEntity;
 import net.minecraft.entity.passive.*;
@@ -350,8 +348,6 @@ public class headDropFeature {
 			"zombie_horse"
 	);
 	
-	private static final TrackedData<Boolean> CHARGED = DataTracker.registerData(CreeperEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
-	
 	public static void execute() {
 		registerHeadDrop();
 	}
@@ -366,37 +362,37 @@ public class headDropFeature {
 				} // if
 			} else if( MOB_DROPS.containsKey( entity.getType().getUntranslatedName() ) ) {
 				HeadDrop drop = MOB_DROPS.get( entity.getType().getUntranslatedName() );
-				
+
 				if( null != drop && null != damageSource.getAttacker() ) {
 					if( damageSource.getAttacker().isPlayer() ) {
 						World world = entity.getWorld();
 						Entity source = damageSource.getSource();
-						
+
 						if( null != source ) {
 							ItemStack weapon = damageSource.getWeaponStack();
-							
+
 							float dropChance = drop.DROP_CHANCE;
-							
+
 							if( null != weapon ) {
 								ItemEnchantmentsComponent enchantments = EnchantmentHelper.getEnchantments(weapon);
 								DynamicRegistryManager drm = world.getRegistryManager();
-								
+
 								if( null != drm ) {
 									Registry<Enchantment> registry = drm.get(RegistryKeys.ENCHANTMENT);
 									Enchantment lootingEnchantment = registry.get(Enchantments.LOOTING);
 									RegistryEntry<Enchantment> lootingEntry = registry.getEntry(lootingEnchantment);
-									
+
 									int enchantmentLevel = enchantments.getLevel( lootingEntry );
-									
+
 									if( enchantmentLevel > 0 ) {
 										dropChance = dropChance * (1 + ( Headhunters.CONFIG.lootingBonusPerLevel * enchantmentLevel ));
 									} // if
 								} // if
 							} // if
-							
+
 							if (MathUtil.hasChance(dropChance)) {
 								ItemStack headStack = buildHeadStack(entity, damageSource.getAttacker().getUuid(), drop.TEXTURE, drop.NOTE_BLOCK_SOUND, drop.DROP_CHANCE);
-								
+
 								if (!headStack.isEmpty()) {
 									entity.dropStack(headStack);
 								} // if
@@ -404,7 +400,7 @@ public class headDropFeature {
 						} // if
 					} // if
 				} // if
-			} // if
+			} // if, else if
 			
 			return true;
 		});
@@ -612,7 +608,7 @@ public class headDropFeature {
 	public static String getCreeperVariant(@NotNull CreeperEntity entity ) {
 		String entityName = getEntityName( entity );
 		
-		if( entity.getDataTracker().get( CHARGED ) ) {
+		if( entity.shouldRenderOverlay() ) {
 			return formatEntityId( "charged", entityName );
 		} // if
 		
