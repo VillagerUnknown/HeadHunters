@@ -409,7 +409,7 @@ public class headDropFeature {
 	public static ItemStack getPlayerHeadStack( MinecraftServer server, UUID uuid ) {
 		ItemStack headStack = new ItemStack( Blocks.PLAYER_HEAD, 1 );
 		headStack.set(DataComponentTypes.MAX_STACK_SIZE, 64);
-//		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, SoundEvents.ENTITY_PLAYER_BURP.getId());
+		headStack.set(DataComponentTypes.NOTE_BLOCK_SOUND, SoundEvents.ENTITY_PLAYER_BURP.getId());
 		
 		if( null != server ) {
 			MinecraftSessionService sessionService = server.getSessionService();
@@ -439,6 +439,7 @@ public class headDropFeature {
 			} // if
 		} // if
 		
+		// DEFAULT_UUID is used to allow stacking and trading of all heads
 		return createHeadStack( entityType, entityName, DEFAULT_UUID, texture, sound, dropChance );
 	}
 	
