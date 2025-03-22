@@ -3,7 +3,7 @@
   "id": "villagerunknown-headhunters",
   "version": "${version}",
   "name": "VillagerUnknown's Head Hunters",
-  "description": "Adds Mob and Player Head drops as well as Head Hunter Villagers to world generation.",
+  "description": "Adds configurable Mob and Player Head drop chances. Includes Head Hunter Villagers for trading mob heads and Hunting lodges.",
   "authors": ["VillagerUnknown"],
   "contact": {
     "homepage":"https://github.com/VillagerUnknown/HeadHunters"

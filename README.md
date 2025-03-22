@@ -1,6 +1,7 @@
 # VillagerUnknown's Head Hunters
 
-Adds Mob and Player Head drops as well as Head Hunter Villagers to world generation.
+Adds configurable Mob and Player Head drop chances. 
+Includes Head Hunter Villagers for trading mob heads and Hunting lodges.
 
 **Features**
 
