@@ -15,7 +15,7 @@
 
   "text.villagerunknown-headhunters.head": "Head",
 
-  "entity.minecraft.villager.headhunter": "Head Hunter",
+  "entity.minecraft.villager.head_hunter": "Head Hunter",
 
   "block.villagerunknown-headhunters.giant_zombie_head": "Giant Zombie Head"
 }
