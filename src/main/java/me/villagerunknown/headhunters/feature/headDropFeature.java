@@ -462,8 +462,6 @@ public class headDropFeature {
 	}
 	
 	public static ItemStack createHeadStack(String entityType, String entityName, UUID attackerUuid, @NotNull String texture, SoundEvent sound, float dropChance ) {
-		Headhunters.LOGGER.info( entityName + " Head" );
-		
 		if( VANILLA_HEADS.contains( entityName ) ) {
 			return getVanillaMobHead( entityName );
 		} // if
