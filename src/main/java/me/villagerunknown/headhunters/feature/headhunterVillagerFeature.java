@@ -49,7 +49,7 @@ public class headhunterVillagerFeature {
 	private static final float LOW_PRICE_MULTIPLIER = 0.05F;
 	private static final float HIGH_PRICE_MULTIPLIER = 0.2F;
 	
-	public static final String HEADHUNTER_STRING = "headhunter";
+	public static final String HEADHUNTER_STRING = "head_hunter";
 	public static final Identifier HEADHUNTER_IDENTIFIER = Identifier.of( MOD_ID, HEADHUNTER_STRING );
 	
 	public static PointOfInterestType HEADHUNTER_POI_TYPE = null;
