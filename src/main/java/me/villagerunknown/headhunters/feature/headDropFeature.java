@@ -52,8 +52,7 @@ public class headDropFeature {
 	public static final float LEGENDARY_DROP_CHANCE = Headhunters.CONFIG.legendaryDropChance;
 	public static final float ALWAYS_DROP_CHANCE = 1F;
 	
-	// @todo Identify a permanent solution, if needed. Temporarily set to a pesky bird.
-	public static final UUID DEFAULT_UUID = UUID.fromString("5f8eb73b-25be-4c5a-a50f-d27d65e30ca0");
+	public static final UUID DEFAULT_UUID = UUID.fromString("5aa7ebdf-c67b-4643-9214-3015d269dedb");
 	
 	public static Map<String, HeadDrop> MOB_DROPS = new HashMap<>() {{
 		put( "allay", new HeadDrop( headDropFeature.EPIC_DROP_CHANCE, SoundEvents.ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM, "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MwMzg5MTc3ZGJhYTkyZjBkNWZmZGY4NDg4NjJjN2Y5YjM2ZGYyMjJmYmZkNzM3ZTI2MzlkYzMwNTllMGNmMyJ9fX0=" ) );
