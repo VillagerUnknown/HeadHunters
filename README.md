@@ -33,6 +33,115 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * epicDropChance - Drop chance for epic mobs (Default: 0.05)
 * legendaryDropChance - Drop chance for legendary mobs (Default: 0.005)
 
+## Head Rarity
+
+### Common
+
+* Cat
+* Villager
+* Wandering Trader
+
+### Uncommon
+
+* Armadillo
+* Bat
+* Bee
+* Chicken
+* Cod
+* Cow
+* Donkey
+* Horse
+* Llama
+* Mule
+* Pig
+* Rabbit
+* Salmon
+* Sheep
+* Squid
+* Trader Llama
+* Wolf
+
+### Rare
+
+* Axolotl
+* Angry Bee
+* Angry Pollinated Bee
+* Pollinated Bee
+* Camel
+* Black Cat
+* Cave Spider
+* Dolphin
+* Drowned
+* Enderman
+* Endermite
+* Fox
+* Frog
+* Glow Squid
+* Goat
+* Guardian
+* Husk
+* Iron Golem
+* Mooshroom
+* Ocelot
+* Panda
+* Parrot
+* Phantom
+* Pillager
+* Polar Bear
+* Pufferfish
+* Silverfish
+* Slime
+* Snow Golem
+* Spider
+* Tadpole
+* Tropical Fish
+* Turtle
+* Witch
+* Zombie
+* Zombie Villager
+* Zombified Piglin
+
+### Epic
+
+* Allay
+* Bogged
+* Breeze
+* Evoker
+* Ghast
+* Screaming Goat
+* Hoglin
+* Magma Cube
+* Ravager
+* Skeleton
+* Stray
+* Strider
+* Vex
+* Vindicator
+
+### Legendary
+
+* Blaze
+* Creeper
+* Illusioner
+* Piglin
+* Piglin Brute
+* Shulker
+* Skeleton Horse
+* Sniffer
+* Zoglin
+
+### Always Drops
+
+* Blue Axolotl
+* Charged Creeper
+* Dragon
+* Elder Guardian
+* Toast Rabbit
+* Killer Rabbit
+* Warden
+* Wither
+* Zombie Horse
+
 ## Support
 
 * Request features and report bugs at https://github.com/VillagerUnknown/HeadHunters/issues
