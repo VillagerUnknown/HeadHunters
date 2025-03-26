@@ -5,6 +5,7 @@
   "text.autoconfig.villagerunknown-headhunters.category.General": "General",
   "text.autoconfig.villagerunknown-headhunters.category.DropChances": "Drop Chances",
 
+  "text.autoconfig.villagerunknown-headhunters.option.addRarityLoreToHeads": "Add Rarity Lore To Heads",
   "text.autoconfig.villagerunknown-headhunters.option.lootingBonusPerLevel": "Looting Bonus Per Level",
   "text.autoconfig.villagerunknown-headhunters.option.playerHeadDropChance": "Player Head Drop Chance",
   "text.autoconfig.villagerunknown-headhunters.option.commonDropChance": "Common Drop Chance",

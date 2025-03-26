@@ -7,6 +7,13 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 public class HeadhuntersConfigData implements me.shedaniel.autoconfig.ConfigData {
 	
 	/**
+	 * General
+	 */
+	
+	@ConfigEntry.Category("General")
+	public boolean addRarityLoreToHeads = false;
+	
+	/**
 	 * Drop Chances
 	 */
 	
