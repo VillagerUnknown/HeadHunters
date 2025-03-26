@@ -38,6 +38,11 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 ### Common
 
 * Cat
+* Chicken
+* Cod
+* Cow
+* Horse
+* Sheep
 * Villager
 * Wandering Trader
 
@@ -46,17 +51,15 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Armadillo
 * Bat
 * Bee
-* Chicken
-* Cod
-* Cow
+* Dolphin
 * Donkey
-* Horse
+* Frog
 * Llama
 * Mule
+* Parrot
 * Pig
 * Rabbit
 * Salmon
-* Sheep
 * Squid
 * Trader Llama
 * Wolf
@@ -70,12 +73,10 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Camel
 * Black Cat
 * Cave Spider
-* Dolphin
 * Drowned
 * Enderman
 * Endermite
 * Fox
-* Frog
 * Glow Squid
 * Goat
 * Guardian
@@ -84,7 +85,6 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Mooshroom
 * Ocelot
 * Panda
-* Parrot
 * Phantom
 * Pillager
 * Polar Bear
@@ -122,6 +122,7 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 
 * Blaze
 * Creeper
+* Charged Creeper
 * Illusioner
 * Piglin
 * Piglin Brute
@@ -133,7 +134,6 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 ### Always Drops
 
 * Blue Axolotl
-* Charged Creeper
 * Dragon
 * Elder Guardian
 * Toast Rabbit
