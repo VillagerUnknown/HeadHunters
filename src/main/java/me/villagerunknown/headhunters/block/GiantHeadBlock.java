@@ -6,7 +6,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Property;
 
-public class GiantHeadBlock  extends HorizontalFacingBlock {
+public class GiantHeadBlock extends HorizontalFacingBlock {
 	
 	public static final MapCodec<GiantHeadBlock> CODEC = createCodec(GiantHeadBlock::new);
 	
