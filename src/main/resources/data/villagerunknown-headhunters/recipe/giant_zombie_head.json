@@ -5,9 +5,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:zombie_head"
-    }
+    "#": "minecraft:zombie_head"
   },
   "result": {
     "id": "villagerunknown-headhunters:giant_zombie_head",

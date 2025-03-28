@@ -302,7 +302,7 @@ public class headDropFeature {
 			if( entity.isPlayer() && MathUtil.hasChance( Headhunters.CONFIG.playerHeadDropChance ) ) {
 				if( null != damageSource.getAttacker() ) {
 					if (damageSource.getAttacker().isPlayer()) {
-						entity.dropStack( HeadUtil.getPlayerHeadStack((PlayerEntity) entity) );
+						entity.dropStack( entity.getServer().getWorld(entity.getWorld().getRegistryKey()), HeadUtil.getPlayerHeadStack((PlayerEntity) entity) );
 					} // if
 				} // if
 			} else if( HEAD_DROPS.containsKey( entity.getType().getUntranslatedName() ) ) {
@@ -323,7 +323,7 @@ public class headDropFeature {
 								DynamicRegistryManager drm = world.getRegistryManager();
 
 								if( null != drm ) {
-									Registry<Enchantment> registry = drm.get(RegistryKeys.ENCHANTMENT);
+									Registry<Enchantment> registry = drm.getOrThrow(RegistryKeys.ENCHANTMENT);
 									Enchantment lootingEnchantment = registry.get(Enchantments.LOOTING);
 									RegistryEntry<Enchantment> lootingEntry = registry.getEntry(lootingEnchantment);
 
@@ -342,7 +342,7 @@ public class headDropFeature {
 								if (!headStack.isEmpty()) {
 									addRarityToStack( headStack, dropChance );
 									
-									entity.dropStack(headStack);
+									entity.dropStack(entity.getServer().getWorld(entity.getWorld().getRegistryKey()), headStack);
 								} // if
 							} // if
 						} // if
