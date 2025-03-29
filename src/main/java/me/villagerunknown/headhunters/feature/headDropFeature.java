@@ -76,6 +76,7 @@ public class headDropFeature {
 		put( "chicken", COMMON_DROP_CHANCE );
 		put( "cod", COMMON_DROP_CHANCE );
 		put( "cow", COMMON_DROP_CHANCE );
+		put( "creaking", EPIC_DROP_CHANCE );
 		
 		put( "creeper", LEGENDARY_DROP_CHANCE );
 		put( "charged_creeper", LEGENDARY_DROP_CHANCE );
