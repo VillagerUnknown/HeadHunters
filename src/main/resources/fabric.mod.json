@@ -6,7 +6,7 @@
   "description": "Adds configurable Mob and Player Head drop chances. Includes Hunting Lodges and Head Hunter Villagers for trading mob heads.",
   "authors": ["VillagerUnknown"],
   "contact": {
-    "homepage":"https://modrinth.com/mod/villagerunknown-headhunters",
+    "homepage":"https://github.com/VillagerUnknown",
     "sources":"https://github.com/VillagerUnknown/HeadHunters",
     "issues":"https://github.com/VillagerUnknown/HeadHunters/issues"
   },
