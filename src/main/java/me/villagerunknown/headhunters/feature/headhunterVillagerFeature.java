@@ -6,10 +6,13 @@ import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.component.ComponentType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.predicate.ComponentPredicate;
+import net.minecraft.predicate.component.ComponentMapPredicate;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.village.TradedItem;
+import net.minecraft.village.VillagerProfession;
 
 import java.util.function.UnaryOperator;
 
@@ -35,7 +38,7 @@ public class headhunterVillagerFeature {
 				
 				headDropFeature.addRarityToStack( headStack, dropChance );
 				
-				UnaryOperator<ComponentPredicate.Builder> operator = builder -> {
+				UnaryOperator<ComponentMapPredicate.Builder> operator = builder -> {
 					for (ComponentType componentType : headStack.getComponents().getTypes()) {
 						builder.add(componentType, headStack.getComponents().get(componentType));
 					} // for
@@ -75,7 +78,9 @@ public class headhunterVillagerFeature {
 	}
 	
 	public static void registerLevelTrades( int level, TradedItem tradeStack, ItemStack headStack, int buyValue, int sellCost ) {
-		TradeOfferHelper.registerVillagerOffers( HEADHUNTER.PROFESSION, level, f -> {
+		RegistryKey<VillagerProfession> professionRegistryKey = RegistryKey.of(Registries.VILLAGER_PROFESSION.getKey(), HEADHUNTER.IDENTIFIER );
+		
+		TradeOfferHelper.registerVillagerOffers( professionRegistryKey, level, f -> {
 			f.add( ( entity, random ) -> VillagerUtil.buyTradeOffer( level, tradeStack, new ItemStack( Items.EMERALD, buyValue ) ) );
 			f.add( ( entity, random ) -> VillagerUtil.sellTradeOffer( level, new TradedItem( Items.EMERALD, sellCost ), headStack ) );
 		});
