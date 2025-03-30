@@ -73,9 +73,19 @@ public class headDropFeature {
 		put( "black_cat", COMMON_DROP_CHANCE );
 		
 		put( "cave_spider", RARE_DROP_CHANCE );
+		
 		put( "chicken", COMMON_DROP_CHANCE );
+		put( "cold_chicken", COMMON_DROP_CHANCE );
+		put( "temperate_chicken", COMMON_DROP_CHANCE );
+		put( "warm_chicken", COMMON_DROP_CHANCE );
+		
 		put( "cod", COMMON_DROP_CHANCE );
+		
 		put( "cow", COMMON_DROP_CHANCE );
+		put( "cold_cow", COMMON_DROP_CHANCE );
+		put( "temperate_cow", COMMON_DROP_CHANCE );
+		put( "warm_cow", COMMON_DROP_CHANCE );
+		
 		put( "creaking", EPIC_DROP_CHANCE );
 		
 		put( "creeper", LEGENDARY_DROP_CHANCE );
@@ -154,7 +164,12 @@ public class headDropFeature {
 		put( "gray_parrot", UNCOMMON_DROP_CHANCE );
 		
 		put( "phantom", RARE_DROP_CHANCE );
+		
 		put( "pig", UNCOMMON_DROP_CHANCE );
+		put( "cold_pig", UNCOMMON_DROP_CHANCE );
+		put( "temperate_pig", UNCOMMON_DROP_CHANCE );
+		put( "warm_pig", UNCOMMON_DROP_CHANCE );
+		
 		put( "piglin", LEGENDARY_DROP_CHANCE );
 		put( "piglin_brute", LEGENDARY_DROP_CHANCE );
 		put( "pillager", RARE_DROP_CHANCE );
