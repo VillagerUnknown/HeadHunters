@@ -36,6 +36,9 @@ public class Headhunters implements ModInitializer {
 		featureManager.addFeature( "headDrop", headDropFeature::execute );
 		featureManager.addFeature( "giantZombieHeadBlock", giantZombieHeadBlockFeature::execute );
 		featureManager.addFeature( "headhunterVillager", headhunterVillagerFeature::execute );
+		
+		// # Load Features
+		featureManager.loadFeatures();
 	}
 	
 }
