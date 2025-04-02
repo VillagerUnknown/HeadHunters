@@ -146,3 +146,5 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 
 * Request features and report bugs at https://github.com/VillagerUnknown/HeadHunters/issues
 * View the changelog at https://github.com/VillagerUnknown/HeadHunters/blob/main/CHANGELOG.md
+
+_It is recommended to enable Player Caching in VillagerUnknown's Platform when using this mod._
