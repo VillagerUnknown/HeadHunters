@@ -11,31 +11,23 @@ import org.slf4j.Logger;
 
 public class Headhunters implements ModInitializer {
 	
-	public static PlatformMod<HeadhuntersConfigData> MOD = null;
-	public static String MOD_ID = null;
-	public static Logger LOGGER = null;
-	public static HeadhuntersConfigData CONFIG = null;
+	public static PlatformMod<HeadhuntersConfigData> MOD = Platform.register( "headhunters", Headhunters.class, HeadhuntersConfigData.class );
+	public static String MOD_ID = MOD.getModId();
+	public static Logger LOGGER = MOD.getLogger();
+	public static HeadhuntersConfigData CONFIG = MOD.getConfig();
 	
 	@Override
 	public void onInitialize() {
-		// # Register Mod w/ Platform
-		MOD = Platform.register( "headhunters", Headhunters.class, HeadhuntersConfigData.class );
-		
-		MOD_ID = MOD.getModId();
-		LOGGER = MOD.getLogger();
-		CONFIG = MOD.getConfig();
-		
-		// # Initialize Mod
-		init();
-	}
-	
-	private static void init() {
+		// # Register mod with Platform
 		Platform.init_mod( MOD );
 		
 		// # Activate Features
-		featureManager.addFeature( "headDrop", headDropFeature::execute );
-		featureManager.addFeature( "giantZombieHeadBlock", giantZombieHeadBlockFeature::execute );
-		featureManager.addFeature( "headhunterVillager", headhunterVillagerFeature::execute );
+		featureManager.addFeature( "head-drop", headDropFeature::execute );
+		featureManager.addFeature( "giant-zombie-head-block", giantZombieHeadBlockFeature::execute );
+		featureManager.addFeature( "headhunter-villager", headhunterVillagerFeature::execute );
+		
+		// # Load Features
+		featureManager.loadFeatures();
 	}
 	
 }
