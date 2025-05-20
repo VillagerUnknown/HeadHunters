@@ -6,12 +6,12 @@
   "description": "Adds configurable Mob and Player Head drop chances. Includes Hunting Lodges and Head Hunter Villagers for trading mob heads.",
   "authors": ["VillagerUnknown"],
   "contact": {
-    "homepage":"https://modrinth.com/mod/villagerunknown-headhunters",
+    "homepage":"https://github.com/VillagerUnknown",
     "sources":"https://github.com/VillagerUnknown/HeadHunters",
     "issues":"https://github.com/VillagerUnknown/HeadHunters/issues"
   },
-  "license": "CC-BY-4.0",
-  "icon": "assets/headhunters/villagerunknown-head-hunters.png",
+  "license": "MIT",
+  "icon": "assets/villagerunknown-headhunters/villagerunknown-head-hunters.png",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -25,16 +25,16 @@
     ]
   },
   "mixins": [
-    "headhunters.mixins.json",
+    "villagerunknown-headhunters.mixins.json",
     {
-      "config": "headhunters.client.mixins.json",
+      "config": "villagerunknown-headhunters.client.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}",
-    "villagerunknown-platform": ">=1.2.0"
+    "minecraft": ">=${minecraft_version}",
+    "villagerunknown-platform": ">=1.3.0+1.21.1"
   }
 }
