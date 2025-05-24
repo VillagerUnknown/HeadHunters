@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Changed supported Platform version to 1.3.0. _This resolves stuttering issues and includes new features._
+- Changed supported Platform version to 1.3.0. 
+_The changes from Platform include a Player Profile Caching option that can reduce the amount of requests to Minecraft Sessions Services from this mod._
 
 ## [1.0.1]
 
