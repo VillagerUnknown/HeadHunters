@@ -181,7 +181,7 @@ public class headDropFeature {
 		put( "brown_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "white_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "black_rabbit", UNCOMMON_DROP_CHANCE );
-		put( "black_and_white_rabbit", UNCOMMON_DROP_CHANCE );
+		put( "white_splotched_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "gold_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "salt_and_pepper_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "killer_rabbit", ALWAYS_DROP_CHANCE );
@@ -274,8 +274,8 @@ public class headDropFeature {
 		put( "angry_rusty_wolf", UNCOMMON_DROP_CHANCE );
 		put( "snowy_wolf", UNCOMMON_DROP_CHANCE );
 		put( "angry_snowy_wolf", UNCOMMON_DROP_CHANCE );
-		put( "spotty_wolf", UNCOMMON_DROP_CHANCE );
-		put( "angry_spotty_wolf", UNCOMMON_DROP_CHANCE);
+		put( "spotted_wolf", UNCOMMON_DROP_CHANCE );
+		put( "angry_spotted_wolf", UNCOMMON_DROP_CHANCE);
 		put( "striped_wolf", UNCOMMON_DROP_CHANCE );
 		put( "angry_striped_wolf", UNCOMMON_DROP_CHANCE );
 		put( "woods_wolf", UNCOMMON_DROP_CHANCE );
