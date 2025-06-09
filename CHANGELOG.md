@@ -4,9 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [1.0.4+1.21.5]
 
+_This update fixes a reported issue._
+
 ### Fixed
 
-- Fixed head drops for "black_and_white" rabbit by correcting it's name to "white_splotched" rabbit.
+- Fixed head drops for "black_and_white" rabbit by correcting its name to "white_splotched" rabbit.
 
 ## [1.0.3+1.21.5]
 
