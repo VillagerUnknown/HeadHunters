@@ -181,7 +181,7 @@ public class headDropFeature {
 		put( "brown_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "white_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "black_rabbit", UNCOMMON_DROP_CHANCE );
-		put( "black_and_white_rabbit", UNCOMMON_DROP_CHANCE );
+		put( "white_splotched_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "gold_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "salt_and_pepper_rabbit", UNCOMMON_DROP_CHANCE );
 		put( "killer_rabbit", ALWAYS_DROP_CHANCE );
