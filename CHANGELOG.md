@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1+1.21.1]
+
+### Fixed
+
+- Fixed name for White Splotched Rabbit.
+- Fixed name for Spotted Wolf.
+
 ## [1.1.0+1.21.1]
 
 ### Changed
