@@ -14,7 +14,7 @@ public class GiantHeadBlock extends HorizontalFacingBlock {
 		return CODEC;
 	}
 	
-	public GiantHeadBlock(AbstractBlock.Settings settings) {
+	public GiantHeadBlock(Settings settings) {
 		super(settings);
 	}
 	
