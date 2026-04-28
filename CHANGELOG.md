@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1+1.21.6]
+
+### Added
+
+- Added Happy Ghast rare head drop chance.
+
+### Changed
+
+- Changed supported Minecraft version.
+
 ## [1.1.1+1.21.5]
 
 ### Changed

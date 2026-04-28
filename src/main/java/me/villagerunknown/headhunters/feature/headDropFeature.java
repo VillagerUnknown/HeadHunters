@@ -111,6 +111,8 @@ public class headDropFeature {
 		put( "warm_frog", UNCOMMON_DROP_CHANCE );
 		
 		put( "ghast", EPIC_DROP_CHANCE );
+		put( "happy_ghast", RARE_DROP_CHANCE );
+		
 		put( "glow_squid", RARE_DROP_CHANCE );
 		
 		put( "goat", RARE_DROP_CHANCE );
