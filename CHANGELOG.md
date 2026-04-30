@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1+1.21.9]
+
+### Added
+
+- Added Copper Golem rare head drop chance.
+
+### Changed
+
+- Changed supported Minecraft version.
+
 ## [1.1.1+1.21.6]
 
 ### Added

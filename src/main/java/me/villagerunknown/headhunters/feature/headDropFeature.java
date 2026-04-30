@@ -81,6 +81,11 @@ public class headDropFeature {
 		
 		put( "cod", COMMON_DROP_CHANCE );
 		
+		put( "copper_golem", RARE_DROP_CHANCE );
+		put( "exposed_copper_golem", RARE_DROP_CHANCE );
+		put( "weathered_copper_golem", RARE_DROP_CHANCE );
+		put( "oxidized_copper_golem", RARE_DROP_CHANCE );
+		
 		put( "cow", COMMON_DROP_CHANCE );
 		put( "cold_cow", COMMON_DROP_CHANCE );
 		put( "temperate_cow", COMMON_DROP_CHANCE );
@@ -320,7 +325,7 @@ public class headDropFeature {
 			if( entity.isPlayer() && MathUtil.hasChance( Headhunters.CONFIG.playerHeadDropChance ) ) {
 				if( null != damageSource.getAttacker() ) {
 					if (damageSource.getAttacker().isPlayer()) {
-						entity.dropStack( entity.getServer().getWorld(entity.getWorld().getRegistryKey()), HeadUtil.getPlayerHeadStack((PlayerEntity) entity) );
+						entity.dropStack( entity.getEntityWorld().getServer().getWorld(entity.getEntityWorld().getRegistryKey()), HeadUtil.getPlayerHeadStack((PlayerEntity) entity) );
 					} // if
 				} // if
 			} else if( HEAD_DROPS.containsKey( entity.getType().getUntranslatedName() ) ) {
@@ -330,7 +335,7 @@ public class headDropFeature {
 
 				if( null != damageSource.getAttacker() ) {
 					if( damageSource.getAttacker().isPlayer() ) {
-						World world = entity.getWorld();
+						World world = entity.getEntityWorld();
 						Entity source = damageSource.getSource();
 
 						if( null != source ) {
@@ -360,7 +365,7 @@ public class headDropFeature {
 								if (!headStack.isEmpty()) {
 									addRarityToStack( headStack, dropChance );
 									
-									entity.dropStack(entity.getServer().getWorld(entity.getWorld().getRegistryKey()), headStack);
+									entity.dropStack(entity.getEntityWorld().getServer().getWorld(entity.getEntityWorld().getRegistryKey()), headStack);
 								} // if
 							} // if
 						} // if
