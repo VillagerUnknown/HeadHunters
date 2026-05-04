@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1+1.21.11]
+
+### Added
+
+- Added Camel Husk as a Rare drop chance.
+- Added Nautilus as an Uncommon drop chance.
+- Added Parched as a Rare drop chance.
+- Added Zombie Nautilus as a Rare drop chance.
+
+### Changed
+
+- Changed supported Minecraft version.
+
 ## [1.1.1+1.21.9]
 
 ### Added

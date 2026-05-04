@@ -57,7 +57,9 @@ public class headDropFeature {
 		put( "blaze", LEGENDARY_DROP_CHANCE );
 		put( "bogged", EPIC_DROP_CHANCE );
 		put( "breeze", EPIC_DROP_CHANCE );
+		
 		put( "camel", RARE_DROP_CHANCE );
+		put( "camel_husk", RARE_DROP_CHANCE );
 		
 		put( "cat", COMMON_DROP_CHANCE );
 		put( "tabby_cat", COMMON_DROP_CHANCE );
@@ -152,6 +154,7 @@ public class headDropFeature {
 		put( "red_mooshroom", RARE_DROP_CHANCE );
 		
 		put( "mule", UNCOMMON_DROP_CHANCE );
+		put( "nautilus", UNCOMMON_DROP_CHANCE );
 		put( "ocelot", RARE_DROP_CHANCE );
 		
 		put( "panda", RARE_DROP_CHANCE );
@@ -161,6 +164,8 @@ public class headDropFeature {
 		put( "worried_panda", RARE_DROP_CHANCE );
 		put( "brown_panda", RARE_DROP_CHANCE );
 		put( "weak_panda", RARE_DROP_CHANCE );
+		
+		put( "parched", RARE_DROP_CHANCE );
 		
 		put( "parrot", UNCOMMON_DROP_CHANCE );
 		put( "red_parrot", UNCOMMON_DROP_CHANCE );
@@ -307,6 +312,9 @@ public class headDropFeature {
 		put( "zombie_shepherd", RARE_DROP_CHANCE );
 		put( "zombie_toolsmith", RARE_DROP_CHANCE );
 		put( "zombie_weaponsmith", RARE_DROP_CHANCE );
+		
+		put( "zombie_nautilus", RARE_DROP_CHANCE );
+		put( "coral_zombie_nautilus", RARE_DROP_CHANCE );
 		
 		put( "zombified_piglin", RARE_DROP_CHANCE );
 	}};

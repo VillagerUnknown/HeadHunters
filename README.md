@@ -56,6 +56,7 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Frog
 * Llama
 * Mule
+* Nautilus
 * Parrot
 * Pig
 * Rabbit
@@ -71,6 +72,7 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Angry Pollinated Bee
 * Pollinated Bee
 * Camel
+* Camel Husk
 * Black Cat
 * Cave Spider
 * Drowned
@@ -85,6 +87,7 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Mooshroom
 * Ocelot
 * Panda
+* Parched
 * Phantom
 * Pillager
 * Polar Bear
@@ -98,6 +101,7 @@ It can be found in structures and crafted by combining 4 zombie heads in a craft
 * Turtle
 * Witch
 * Zombie
+* Zombie Nautilus
 * Zombie Villager
 * Zombified Piglin
 

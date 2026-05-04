@@ -81,8 +81,8 @@ public class headhunterVillagerFeature {
 		RegistryKey<VillagerProfession> professionRegistryKey = RegistryKey.of(Registries.VILLAGER_PROFESSION.getKey(), HEADHUNTER.IDENTIFIER );
 		
 		TradeOfferHelper.registerVillagerOffers( professionRegistryKey, level, f -> {
-			f.add( ( entity, random ) -> VillagerUtil.buyTradeOffer( level, tradeStack, new ItemStack( Items.EMERALD, buyValue ) ) );
-			f.add( ( entity, random ) -> VillagerUtil.sellTradeOffer( level, new TradedItem( Items.EMERALD, sellCost ), headStack ) );
+			f.add( ( world, entity, random ) -> VillagerUtil.buyTradeOffer( level, tradeStack, new ItemStack( Items.EMERALD, buyValue ) ) );
+			f.add( ( world, entity, random ) -> VillagerUtil.sellTradeOffer( level, new TradedItem( Items.EMERALD, sellCost ), headStack ) );
 		});
 	}
 	
